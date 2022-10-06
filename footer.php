@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3 footer-item">
-        <img class="img-fluid logo" src="<?php echo content_url( '/uploads/2022/10/white-logo.png' ) ?>" />
+        <img class="img-fluid logo" src="<?php echo bloginfo( 'template_directory' ) . '/assets/images/white-logo.png' ?>" />
 
         <p class="mt-3">
           Your content goes here Your content goes here Your content goes

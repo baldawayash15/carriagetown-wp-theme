@@ -71,18 +71,10 @@
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <?php 
-              $custom_logo_id = get_theme_mod( 'custom_logo' );
-              $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-              
-              if ( has_custom_logo() ) { ?>
-                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                  <img class="img-fluid logo" src="<?php echo esc_url( $logo[0] ) ?>" alt="<?php echo get_bloginfo( 'name' ); ?>"/>
-                </a>
-              <?php } else { ?>
-                <h1><?php echo get_bloginfo( 'name' ); ?></h1>
-              <?php } ?>
-                
+             <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                  <img class="img-fluid logo" src="<?php echo bloginfo( 'template_directory' ) . '/assets/images/logo.jpg' ?>" alt="<?php echo get_bloginfo( 'name' ); ?>"/>
+             </a>
+                              
           <button
             class="navbar-toggler"
             type="button"
